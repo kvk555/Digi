@@ -13,7 +13,6 @@ class DataLoadHandler(
     private val onSuccess: suspend (result: List<ItemEntity>, isRefreshing: Boolean) -> Unit,
     private val endReached: () -> Boolean
 ) {
-
     private var currentId = initialId
     private var isMakingRequest = false
     private var isEndReached = false
@@ -50,4 +49,3 @@ class DataLoadHandler(
         isMakingRequest = false
     }
 }
-
